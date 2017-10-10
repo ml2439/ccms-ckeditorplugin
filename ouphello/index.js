@@ -1,4 +1,4 @@
 define(function(require, exports, module) {
-    var Helper = require("./oup-hello/helper.js");
-    Helper.registerPlugin("oup-hello");
+    var Helper = require("./ouphello/helper.js");
+    Helper.registerPlugin("ouphello");
 });

@@ -18,7 +18,6 @@
 
     var Ratchet = window.Ratchet;
 
-    var OneTeam = window._OT;
     var CKEDITOR = window.CKEDITOR;
 
     var pluginName = "oup-hello";

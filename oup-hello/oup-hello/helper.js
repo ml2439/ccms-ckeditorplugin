@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
 
-    var CKEDITOR = require("./default");
+    var CKEDITOR = require("./default.js");
     window.CKEDITOR = CKEDITOR;
 
     var Ratchet = require("ratchet/web");
@@ -10,7 +10,7 @@ define(function(require, exports, module) {
         registerPlugin: function(pluginId)
         {
             var pluginPath = "../../.." + Ratchet.paths(Directories.MODULES, "app", "plugins/ckeditor/" + pluginId + "/");
-
+console.log("pluginPath: " + pluginPath);
             CKEDITOR.plugins.addExternal(pluginId, pluginPath, 'plugin.js');
             CKEDITOR.config.customConfig = pluginPath + "../ckeditor_config.js";
 

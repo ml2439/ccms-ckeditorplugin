@@ -1,10 +1,11 @@
 define(function(require, exports, module) {
 
-    var CKEDITOR = require("./default.js");
-    window.CKEDITOR = CKEDITOR;
+    // var CKEDITOR = require("./default.js");
+    // window.CKEDITOR = CKEDITOR;
+    var CKEDITOR = window.CKEDITOR;
 
     var Ratchet = require("ratchet/web");
-    var Directories = require("directories");
+    var Directories = require("directories.js");
 
     return {
         registerPlugin: function(pluginId)

@@ -9,10 +9,10 @@ define(function(require, exports, module) {
     return {
         registerPlugin: function(pluginId)
         {
-            var pluginPath = "../../.." + Ratchet.paths(Directories.MODULES, "app", "plugins/ckeditor/" + pluginId + "/");
-console.log("pluginPath: " + pluginPath);
+            var pluginPath = "../../../" + pluginId + "/";
+
             CKEDITOR.plugins.addExternal(pluginId, pluginPath, 'plugin.js');
-            CKEDITOR.config.customConfig = pluginPath + "../ckeditor_config.js";
+            // CKEDITOR.config.customConfig = pluginPath + "../ckeditor_config.js";
 
             if (CKEDITOR.config.extraPlugins.length > 0) {
                 CKEDITOR.config.extraPlugins += ",";

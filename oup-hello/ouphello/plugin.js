@@ -20,7 +20,7 @@
 
     var CKEDITOR = window.CKEDITOR;
 
-    var pluginName = "oup-hello";
+    var pluginName = "ouphello";
 
     CKEDITOR.plugins.add(pluginName, {
         icons: pluginName,
@@ -34,7 +34,7 @@
 
             editor.addCommand(pluginName, {
                 exec: function (editor) {
-                    editor.insertHtml(html);
+                    editor.insertHtml("<em>Hello</em>");
                 }
             });
         }

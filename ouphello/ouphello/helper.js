@@ -5,7 +5,7 @@ define(function(require, exports, module) {
     var CKEDITOR = window.CKEDITOR;
 
     var Ratchet = require("ratchet/web");
-    var Directories = require("directories.js");
+    // var Directories = require("directories");
 
     return {
         registerPlugin: function(pluginId)

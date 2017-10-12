@@ -10,7 +10,7 @@ define(function(require, exports, module) {
     return {
         registerPlugin: function(pluginId, moduleId)
         {
-            var pluginPath = "../../../" + moduleId + "/" + moduleId + "/" + pluginId + "/";
+            var pluginPath = "../../../" + moduleId + "/" + pluginId + "/" + pluginId + "/";
 
             CKEDITOR.plugins.addExternal(pluginId, pluginPath, 'plugin.js');
             // CKEDITOR.config.customConfig = pluginPath + "../ckeditor_config.js";

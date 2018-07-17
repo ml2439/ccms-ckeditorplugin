@@ -4,7 +4,6 @@ define(function(require, exports, module) {
     // window.CKEDITOR = CKEDITOR;
     var CKEDITOR = window.CKEDITOR;
 
-    var Ratchet = require("ratchet/web");
     // var Directories = require("directories");
 
     return {

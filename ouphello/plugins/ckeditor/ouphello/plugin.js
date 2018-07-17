@@ -4,19 +4,8 @@
      * Supports configuration like this:
      *
      * {
-     *     "enableLink": true,
-     *     "enableAltText": true,
-     *     "imagePickerType": "",
-     *     "imagePickerConfig": {},
-     *     "linkPickerType": "",
-     *     "linkPickerConfig": {},
-     *
-     *     "imageClass": "",
-     *     "linkClass": ""
      * }
      */
-
-    var Ratchet = window.Ratchet;
 
     var CKEDITOR = window.CKEDITOR;
 

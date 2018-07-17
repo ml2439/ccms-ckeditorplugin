@@ -10,6 +10,7 @@ define(function(require, exports, module) {
     }
 
     // so that data- attributes work
+    CKEDITOR.config.allowedContent = true;
     CKEDITOR.config.extraAllowedContent = "*[*]{*}(*)";
     CKEDITOR.config.entities = false;
     CKEDITOR.config.basicEntities = false;
@@ -26,9 +27,9 @@ define(function(require, exports, module) {
         }
 
         var parts = ref.split("/");
-        var platformId = parts[0];
-        var repositoryId = parts[1];
-        var branchId = parts[2];
+        //var platformId = parts[0];
+        //var repositoryId = parts[1];
+        //var branchId = parts[2];
         var nodeId = parts[3];
 
         return "/res/" + nodeId;
